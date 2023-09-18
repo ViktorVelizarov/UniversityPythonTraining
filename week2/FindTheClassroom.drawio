@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2023-09-18T12:10:49.622Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="ufN37mB9C-6dqd3sVoYy" version="21.7.5" type="device">
+  <diagram name="Page-1" id="MWCXWNmF7rS50jj2hBTX">
+    <mxGraphModel dx="1290" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_m_3Wq6KI0BY99u_m2Fb-1" target="_m_3Wq6KI0BY99u_m2Fb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_m_3Wq6KI0BY99u_m2Fb-2" target="_m_3Wq6KI0BY99u_m2Fb-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-2" value="roomNumbers = {&#39;Math&#39;: &#39;100&#39;, &#39;English&#39;: &#39;200&#39;, &#39;Biology&#39;: &#39;300&#39;, &#39;History&#39;: &#39;400&#39;, &#39;PE&#39;: &#39;500&#39;}" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="130" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_m_3Wq6KI0BY99u_m2Fb-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-3" value="input studentName" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="111.25" y="260" width="137.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_m_3Wq6KI0BY99u_m2Fb-4" target="_m_3Wq6KI0BY99u_m2Fb-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-4" value="input studentSubject" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="111.25" y="380" width="137.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-10" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="_m_3Wq6KI0BY99u_m2Fb-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-11" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="_m_3Wq6KI0BY99u_m2Fb-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394.8275862068965" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-8" value="if (studentSubject in roomNumbers)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="352.5" width="150" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_m_3Wq6KI0BY99u_m2Fb-12" target="_m_3Wq6KI0BY99u_m2Fb-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-12" value="output (&quot;I don&#39;t know which room that class is in :/&quot;)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="230" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="_m_3Wq6KI0BY99u_m2Fb-13" target="_m_3Wq6KI0BY99u_m2Fb-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-13" value="output roomNumbers[studentSubject]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="385" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_m_3Wq6KI0BY99u_m2Fb-14" value="End" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="605" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
