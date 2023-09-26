@@ -1,0 +1,17 @@
+const int potentiometerPin = A0;  
+const int ledPin = 5;           
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);  
+}
+
+void loop() {
+  int potValue = analogRead(potentiometerPin);  
+  int mappedValue = map(potValue, 0, 1023, 0, 255);  
+  
+  analogWrite(ledPin, mappedValue);  
+  Serial.println("Potentiometer Value: " + String(potValue)); 
+  delay(100);  
+}
+ 
