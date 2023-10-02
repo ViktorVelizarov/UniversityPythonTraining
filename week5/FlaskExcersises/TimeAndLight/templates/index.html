@@ -6,11 +6,33 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     </head>
     <body>
+        <h1> Time And Light </h1>
         <main>
-        <h1> Time: </h1>
-        <p style="color: {{random_color}}">{{ time }}</p>
-        <h1> Light: </h1>
-        <p style="color: {{random_color}}">{{ light }}</p>
+        
+        {% if measurments == [] %}
+            <p>No measurments at the moment.</p>
+        {% else %}
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Time:</th>
+                    <th></th>
+                    <th>Light:</th>
+                </tr>
+                {% for (time, light, color) in measurments %}
+                    <tr>
+                        <td style="color: white">{{ loop.index }}.</td>
+                        <td style="color: {{color}}">
+                            {{ time }}
+                        </td>
+                        <td style="color: {{color}}">-</td>
+                        <td style="color: {{color}}">
+                            {{ light }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
         </main>
     </body>
 </html>

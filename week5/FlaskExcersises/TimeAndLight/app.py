@@ -3,6 +3,8 @@ from flask import render_template
 from datetime import datetime
 import random
 
+listOfMeasurments = []
+
 
 def currentTime():
     rightNow = datetime.now()
@@ -20,11 +22,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
+    global listOfMeasurments
     random_color = "#{:02x}{:02x}{:02x}".format(random.randint(
         0, 255), random.randint(0, 255), random.randint(0, 255))
-
-    return render_template('index.html', time=currentTime(),
-                           light=currentLight(),  random_color=random_color)
+    listOfMeasurments.insert(0, (currentTime(), currentLight(), random_color))
+    listOfMeasurments = listOfMeasurments[:10]
+    return render_template('index.html', measurments=listOfMeasurments)
 
 
 app.run()
