@@ -1,6 +1,18 @@
-<h1> Time: </h1>
-<p>{{ time }}</p>
-<h1> Light: </h1>
-<p>{{ light }}</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="refresh" content="1">
+        <title>TimeAndLight</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+        <main>
+        <h1> Time: </h1>
+        <p style="color: {{random_color}}">{{ time }}</p>
+        <h1> Light: </h1>
+        <p style="color: {{random_color}}">{{ light }}</p>
+        </main>
+    </body>
+</html>
 
 
