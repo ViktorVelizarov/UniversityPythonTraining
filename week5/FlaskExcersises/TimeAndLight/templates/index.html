@@ -6,9 +6,9 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     </head>
     <body>
-        <h1> Time And Light </h1>
-        <main>
-        
+        <h1> Greenhouse.exe </h1>
+        <div class="firstContainer">
+        <div>
         {% if measurments == [] %}
             <p>No measurments at the moment.</p>
         {% else %}
@@ -18,22 +18,74 @@
                     <th>Time:</th>
                     <th></th>
                     <th>Light:</th>
+                    <th></th>
+                    <th>Humidity:</th>
+                    <th></th>
+                    <th>Temperature:</th>
                 </tr>
-                {% for (time, light, color) in measurments %}
+                {% for (time, light, humidity, temperature) in measurments %}
                     <tr>
                         <td style="color: white">{{ loop.index }}.</td>
-                        <td style="color: {{color}}">
+                        <td>
                             {{ time }}
                         </td>
-                        <td style="color: {{color}}">-</td>
-                        <td style="color: {{color}}">
+
+                        <td>-</td>
+                        <td>
                             {{ light }}
+                        </td>
+
+                        <td>-</td>
+                        <td>
+                            {{ humidity }}
+                        </td>
+
+                        <td>-</td>
+                        <td>
+                            {{ temperature }}
                         </td>
                     </tr>
                 {% endfor %}
             </table>
         {% endif %}
-        </main>
+        </div>
+    </div>
+
+
+    <div class= "secondContainer">
+    <div>
+        <table>
+            <tr>
+                <th></th>
+                <th>Light:</th>
+                <th></th>
+                <th>Humidity:</th>
+                <th></th>
+                <th>Temperature:</th>
+            </tr>
+            {% for (rowNames, lightStats, humidityStats, temperatureStats) in stats %}
+                <tr>
+                    <td style="color: white">{{rowNames}}</td>
+                    <td>
+                        {{lightStats}}
+                    </td>
+
+                    <td>-</td>
+                    <td>
+                        {{humidityStats}}
+                    </td>
+
+                    <td>-</td>
+                    <td>
+                        {{temperatureStats}}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    </div>
+
+    
     </body>
 </html>
 
