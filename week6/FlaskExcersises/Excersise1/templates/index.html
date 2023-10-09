@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>Measurments</title>
+    </head>
+    <body>
+        <h1>Measurments</h1>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Time: </th>
+                    <th></th>
+                    <th>Temperature:</th>
+                </tr>
+                {% for (time, temp) in measurments%}
+                    <tr>
+                        <td>{{ loop.index }}.</td>
+                        <td>{{ time }}</td>
+                        <td>-</td>
+                        <td>
+                            {{ temp }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+    </body>
+</html>
