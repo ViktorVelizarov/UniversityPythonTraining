@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="refresh" content="1">
+        <title>TimeAndLight</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+        <h1><a href="/">Greenhouse.exe</a></h1>
+        <div class="firstContainer">
+        <div>
+        {% if measurments == [] %}
+            <div class="errorContainer">
+            <h3>No measurments at the moment. Please plug the Arduino and start the dataClient</h3>
+            <img src="https://emojiisland.com/cdn/shop/products/Crying_Emoji_Icon_2_grande.png?v=1571606091" alt="sadface"
+            width="42" height="42"/>
+            </div>
+            {% else %}
+            <table>
+                <tr>
+                    <th></th>
+                    <th>SensorID:</th>
+                    <th></th>
+                    <th>Time:</th>
+                    <th></th>
+                    <th>Value:</th>
+                    <th></th>
+                </tr>
+                {% for (time, light, humidity, temperature, sensorID) in measurments %}
+                    <tr>
+                        <td style="color: white">{{ loop.index }}.</td>
+                        {% if selectedSensor == 'light' %}
+                            <td>{{ sensorID }}</td> <td>-</td>
+                            <td>{{ time }}</td> <td>-</td>
+                            <td>{{ light }}</td>
+                        {% endif %}
+                        {% if selectedSensor == 'humidity' %}
+                            <td>{{ sensorID }}</td> <td>-</td>
+                            <td>{{ time }}</td> <td>-</td>
+                            <td>{{ humidity }}</td>
+                        {% endif %}
+                        {% if selectedSensor == 'temperature' %}
+                            <td>{{ sensorID }}</td> <td>-</td>
+                            <td>{{ time }}</td> <td>-</td>
+                            <td>{{ temperature }}</td> 
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+        </div>
+    </div>
+
+    
+    </body>
+</html>
+
+

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, black, #262522);
+}
+.firstContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+.secondContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+.errorContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    text-align: left;
+    font-size: 15px;
+}
+h1{
+    color: white;
+    font-family: 'Dela Gothic One', sans-serif;
+}
+a{
+    color: white; 
+}
+a:hover{
+    color: #49FF00
+}
+h3{
+    color: #49FF00;
+}
+select{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+input{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white
+}
+input:hover{
+    background-color: #49FF00;
+}
+th{
+    color: white;
+    font-family: 'Dela Gothic One', sans-serif;   
+}
+td{
+    color: #49FF00
+}
+

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>SensorForm</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+        <h1>Which data would you like to see?</h1>
+        <form action="/sensorChoice" method="post"> 
+
+            <select id="dropdown" name="sensor">
+                <option value="temp">Temperature</option>
+                <option value="humidity">Humidity</option>
+                <option value="light">Light</option>
+                <option value="all">All of them</option>
+            </select>
+
+            <input type="submit" value="Enter"></input>
+        </form>
+    </body>
+</html>
